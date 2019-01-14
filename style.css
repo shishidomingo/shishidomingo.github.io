@@ -51,6 +51,11 @@ html {
 
 .mission, .featured-tea, .locations {
   margin-left: 20px;
+  color: seashell;
+}
+
+a {
+  color: seashell;
 }
 
 .mission-container {
