@@ -20,7 +20,10 @@ html {
   opacity: 0.9;*/
   border-bottom: 1px solid seashell;
   height: 69px;
+}
 
+a {
+  color: seashell;
 }
 
 .menu {
@@ -51,10 +54,6 @@ html {
 
 .mission, .featured-tea, .locations {
   margin-left: 20px;
-  color: seashell;
-}
-
-a {
   color: seashell;
 }
 
