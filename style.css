@@ -22,7 +22,7 @@ html {
   height: 69px;
 }
 
-a {
+a, a:link, a:visited {
   color: seashell;
 }
 
