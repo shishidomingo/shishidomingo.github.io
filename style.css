@@ -8,6 +8,14 @@ body {
   background: #666;
 }
 
+footer {
+  color: white;
+  font-weight: bold;
+}
+
+footer a {
+  color: yellow;
+}
 main {}
 
   .topid {
@@ -219,6 +227,10 @@ h3, h2, h1, p {
   text-align: center;
   margin: 0.1em;
   padding: 0.1em;
+}
+
+h1 {
+  text-decoration: underline;
 }
 table{
   margin: 0 auto;
