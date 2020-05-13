@@ -34,62 +34,90 @@
         </div>
         <div class='achievements-paragraph'>
           <p>Every year, Multnomah Anglers and Hunters is proud to present six students pursuing degrees in Fisheries and Wildlife Sciences at Oregon State University with a scholarship to help fund their studies.  These students are building careers in managing and conserving the fish, wildlife, and habitats that we work to protect, and we are honored to have been a part of this tradition for over 70 years.  The scholarship program is funded by the generosity of our members and donors like you!</p><p></p><p></p>
-          <p>Our scholarships are dedicated to the memory of special MA&H members who worked to make this program such an amazing success.</p>
+          <p>Our scholarships are dedicated to the memory of special members have made incredible contributions to our organization and showed tireless dedication to conservation and sportsmen's rights.  Read more about those members in the slideshow below!</p>
         </div>
       </div>
     </div>
-    <div class='scholarship-container'>
-      <div class='scholarship-bios'>
-          <h3>Milt Guymon Endowment Award</h3>
-          <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Brent Cardenas</p>
-        </div>
-        <div class='scholarship-bios'>
-          <h3>Bill Schaefer Memorial Scholarship</h3>
-          <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Marie Heuberger</p>
-        </div>
-        <div class='scholarship-bios'>
-          <h3>Chan Schenck Memorial Scholarship</h3>
-        <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Morgan Dally</p>
-        </div>
-        <div class='scholarship-bios'>
-          <h3>William (Bill) Bogh Memorial Scholarship</h3>
-          <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Mahima White</p>
-        </div>
-        <div class='scholarship-bios'>
-          <h3>William (Bill) Bogh Memorial Scholarship</h3>
-          <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Vanessa Ramirez</p>
-        </div>
-        <div class='scholarship-bios'>
-          <h3>Larry Cassidy Memorial Scholarship</h3>
-          <center><img src='headshotsample.png' alt='Sample Headshot'></center>
-          <p>XXX XXX (19XX-20XX) was a 30 year member of MA&H and loved to help students do XXX.</p>
-          <p>2020 Recipient: Maizy Kesterson</p>
-        </div>
 
-      </div>
-    </main>
+<div class="slideshow-holder">
+    <!-- Slideshow container -->
+<div class="slideshow-container">
 
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="guymon-gradient.jpg" style="width:100%">
+  </div>
 
-    <!--<section class='hero'>
-      <div class='hero-inner'>
-        <h1>Multnomah Anglers and Hunters</h1>
-        <h2>Oregon's Pioneer Sportsmen's and Conservation Organization</h2>
-        <h3>Established January 5, 1883</h3>
-      </div>
-    </section>-->
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="schaeffer-gradient.jpg" style="width:100%">
+  </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="schenck-gradient.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="bogh-gradient.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="cassidy-gradient.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+  </main>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
+
 <footer>
-  <p>Multnomah Anglers & Hunters | PO Box 13771, Portland, OR 97213 | <a href='mailto:admin@multnomahanglershunters.com'>email us</a></p>
+<p>Multnomah Anglers & Hunters | PO Box 13771, Portland, OR 97213 | <a href='mailto:admin@multnomahanglershunters.com'>email us</a></p>
 </footer>
 </html>
